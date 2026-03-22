@@ -19,79 +19,77 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+	// {
+	// 	id: "mizuki-blog",
+	// 	title: "Mizuki Blog Theme",
+	// 	description:
+	// 		"Modern blog theme developed based on the Astro framework, supporting multilingual, dark mode, and responsive design features.",
+	// 	image: "",
+	// 	category: "web",
+	// 	techStack: ["Astro", "TypeScript", "Tailwind CSS", "Svelte"],
+	// 	status: "completed",
+	// 	liveDemo: "https://blog.example.com",
+	// 	sourceCode: "https://github.com/example/mizuki", // 更改为GitHub链接
+	// 	visitUrl: "https://blog.example.com", // 添加前往项目链接
+	// 	startDate: "2024-01-01",
+	// 	endDate: "2024-06-01",
+	// 	featured: true,
+	// 	tags: ["Blog", "Theme", "Open Source"],
+	// },
 	{
-		id: "mizuki-blog",
-		title: "Mizuki Blog Theme",
+		id: "unity-cyclelist-component",
+		title: "Unity Cyclelist Component",
 		description:
-			"Modern blog theme developed based on the Astro framework, supporting multilingual, dark mode, and responsive design features.",
+			"A reusable UI component for displaying cyclic lists in Unity.",
 		image: "",
-		category: "web",
-		techStack: ["Astro", "TypeScript", "Tailwind CSS", "Svelte"],
-		status: "completed",
-		liveDemo: "https://blog.example.com",
-		sourceCode: "https://github.com/example/mizuki", // 更改为GitHub链接
-		visitUrl: "https://blog.example.com", // 添加前往项目链接
-		startDate: "2024-01-01",
-		endDate: "2024-06-01",
-		featured: true,
-		tags: ["Blog", "Theme", "Open Source"],
-	},
-	{
-		id: "portfolio-website",
-		title: "Personal Portfolio",
-		description:
-			"Personal portfolio website showcasing project experience and technical skills.",
-		image: "",
-		category: "web",
-		techStack: ["React", "Next.js", "TypeScript", "Framer Motion"],
-		status: "completed",
-		liveDemo: "https://portfolio.example.com",
-		sourceCode: "https://github.com/example/portfolio",
-		visitUrl: "https://portfolio.example.com", // 添加前往项目链接
-		startDate: "2023-09-01",
-		endDate: "2023-12-01",
-		featured: true,
-		tags: ["Portfolio", "React", "Animation"],
-	},
-	{
-		id: "task-manager-app",
-		title: "Task Manager App",
-		description:
-			"Cross-platform task management application supporting team collaboration and project management.",
-		image: "",
-		category: "mobile",
-		techStack: ["React Native", "TypeScript", "Redux", "Firebase"],
+		category: "other",
+		techStack: ["UGUI", "Unity", "C#"],
 		status: "in-progress",
-		startDate: "2024-03-01",
-		tags: ["Mobile", "Productivity", "Team Collaboration"],
+		sourceCode: "https://github.com/Lemo1925/CycleList",
+		startDate: "2026-03-01",
+		tags: ["UGUI", "Unity", "C#"],
 	},
 	{
-		id: "data-visualization-tool",
-		title: "Data Visualization Tool",
+		id: "awesome-todolist-app",
+		title: "TodoList App",
 		description:
-			"Data visualization tool supporting multiple chart types and interactive analysis.",
+			"A TodoList application designed to help users manage their tasks.",
 		image: "",
-		category: "web",
-		techStack: ["Vue.js", "D3.js", "TypeScript", "Node.js"],
+		category: "desktop",
+		techStack: ["Avalonia", "C#"],
 		status: "completed",
-		liveDemo: "https://dataviz.example.com",
-		visitUrl: "https://dataviz.example.com", // 添加前往项目链接
-		startDate: "2023-06-01",
-		endDate: "2023-11-01",
-		tags: ["Data Visualization", "Analytics", "Charts"],
+		startDate: "2024-03-01",
+		endDate: "2024-03-15",
+		tags: ["Desktop", "Avalonia", "TodoList"],
+		sourceCode: "https://github.com/Lemo1925/TodoList",
 	},
-	{
-		id: "e-commerce-platform",
-		title: "E-commerce Platform",
-		description:
-			"Full-stack e-commerce platform including user management, product management, and order processing features.",
-		image: "",
-		category: "web",
-		techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-		status: "planned",
-		startDate: "2024-07-01",
-		tags: ["E-commerce", "Full Stack", "Payment Integration"],
-	},
+	// {
+	// 	id: "data-visualization-tool",
+	// 	title: "Data Visualization Tool",
+	// 	description:
+	// 		"Data visualization tool supporting multiple chart types and interactive analysis.",
+	// 	image: "",
+	// 	category: "web",
+	// 	techStack: ["Vue.js", "D3.js", "TypeScript", "Node.js"],
+	// 	status: "completed",
+	// 	liveDemo: "https://dataviz.example.com",
+	// 	visitUrl: "https://dataviz.example.com", // 添加前往项目链接
+	// 	startDate: "2023-06-01",
+	// 	endDate: "2023-11-01",
+	// 	tags: ["Data Visualization", "Analytics", "Charts"],
+	// },
+	// {
+	// 	id: "e-commerce-platform",
+	// 	title: "E-commerce Platform",
+	// 	description:
+	// 		"Full-stack e-commerce platform including user management, product management, and order processing features.",
+	// 	image: "",
+	// 	category: "web",
+	// 	techStack: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
+	// 	status: "planned",
+	// 	startDate: "2024-07-01",
+	// 	tags: ["E-commerce", "Full Stack", "Payment Integration"],
+	// },
 ];
 
 // Get project statistics
