@@ -5,7 +5,7 @@ export interface TimelineItem {
 	id: string;
 	title: string;
 	description: string;
-	type: "education" | "work" | "project" | "achievement";
+	type: "education" | "work" | "project" | "achievement" | "personal";
 	startDate: string;
 	endDate?: string; // If empty, it means current
 	location?: string;
@@ -25,186 +25,139 @@ export interface TimelineItem {
 
 export const timelineData: TimelineItem[] = [
 	{
-		id: "current-study",
+		id: "university-study",
 		title: "Studying Computer Science and Technology",
 		description:
-			"Currently studying Computer Science and Technology, focusing on web development and software engineering.",
+			"Currently studying Computer Science and Technology, focusing on game development and software engineering.",
 		type: "education",
-		startDate: "2022-09-01",
-		location: "Beijing",
-		organization: "Beijing Institute of Technology",
-		skills: ["Java", "Python", "JavaScript", "HTML/CSS", "MySQL"],
+		startDate: "2020-10-13",
+		endDate: "2024-4-30",
+		location: "ShaoGuan",
+		organization: "ShaoGuan University",
+		skills: ["Java", "Python", "C/C++", "C#", "MySQL"],
 		achievements: [
-			"Current GPA: 3.6/4.0",
-			"Completed data structures and algorithms course project",
-			"Participated in multiple course project developments",
+			"GPA: 3.35/5.0",
+			"Completed data structures and algorithms course project.",
+			"Awarded two patents and one software copyright registration.",
+			"Published one paper in a core journal.",
 		],
 		icon: "material-symbols:school",
-		color: "#059669",
-		featured: true,
+		color: "#ee5711",
+		// featured: true,
 	},
 	{
-		id: "mizuki-blog-project",
-		title: "Mizuki Personal Blog Project",
+		id: "Shiyue-technology-internship",
+		title: "Shiyue Technology Internship",
 		description:
-			"A personal blog website developed using the Astro framework as a practical project for learning frontend technologies.",
-		type: "project",
-		startDate: "2024-06-01",
-		endDate: "2024-08-01",
-		skills: ["Astro", "TypeScript", "Tailwind CSS", "Git"],
+			"Interned at Shiyue Technology, gaining hands-on experience in software development and team collaboration.",
+		type: "work",
+		startDate: "2024-03-14",
+		endDate: "2024-06-30",
+		location: "Guangzhou Tianhe District",
+		organization: "Guangzhou Shiyue Technology Co., Ltd.",
+		skills: ["C#", "Lua", "Unity", "Agile Development"],
 		achievements: [
-			"Mastered modern frontend development tech stack",
-			"Learned responsive design and user experience optimization",
-			"Completed the full process from design to deployment",
+			"Cooperated with the team to develop a mini game, which was won the 2nd place.",
+			"Received positive feedback from users and stakeholders.",
+			"Improved coding skills and learned best practices for software development.",
+			"Participated in daily stand-ups and sprint planning meetings, enhancing teamwork and communication skills.",
+		],
+		icon: "material-symbols:verified",
+		color: "#7C3AED",
+	},
+	{
+		id: "first-job",
+		title: "Shiyue Technology Unity Development",
+		description:
+			"Worked as a Unity developer at Shiyue Technology, contributing to the development of interactive applications and games.",
+		type: "work",
+		startDate: "2024-07-01",
+		endDate: "2024-12-17",
+		location: "Guangzhou Tianhe District",
+		organization: "Guangzhou Shiyue Technology Co., Ltd.",
+		skills: ["UGUI", "Lua", "Unity", "AssetBundle", "Git"],
+		achievements: [
+			"Join the main project development, responsible for implementing core gameplay mechanics and optimizing performance.",
+			"Collaborated with artists and designers to create engaging and visually appealing game content.",
+			"Participated in code reviews and contributed to improving code quality and maintainability.",
+			"Received positive feedback from users and stakeholders, contributing to the success of the project.",
+		],
+		icon: "material-symbols:code",
+		color: "#2563EB",
+		// featured: true,
+	},
+	{
+		id: "second-job",
+		title: "ShenZhen Baoliang Technology Unity Development",
+		description:
+			"Worked as a Unity developer at ShenZhen Baoliang Technology, contributing to the development of interactive applications.",
+		type: "work",
+		startDate: "2025-06-03",
+		endDate: "2026-1-21",
+		location: "ShenZhen NanShan District",
+		organization: "ShenZhen Baoliang Technology Co., Ltd.",
+		skills: [
+			"UGUI",
+			"Jenkins",
+			"Unity",
+			"Addressable",
+			"Shader",
+			"ProtoBuf",
+			"SVN",
+		],
+		achievements: [
+			"Use Async/Await to develop the main project.",
+			"Cooperating with the team to implement core gameplay mechanics and optimize performance.",
+			"Communicated with artists and designers to create engaging and visually appealing game content.",
+			"Participated in code reviews and contributed to improving code quality and maintainability.",
+			"Cooperated with AI developers to integrate AI features into the project.",
+		],
+		icon: "material-symbols:work",
+		color: "#0bd146",
+		// featured: true,
+	},
+	{
+		id: "current-state",
+		title: "Learning and improving skills",
+		description:
+			"Currently learning and improving skills in Game development and related technologies.",
+		type: "personal",
+		startDate: "2026-03-01",
+		location: "Dongguan City",
+		skills: ["Docker", "AI", "Python", "Astro", "Node.js"],
+		achievements: [
+			"Rebuild this personal website using Astro and Tailwind CSS.",
+			"Learning Docker and AI technologies to enhance development skills.",
+			"Continuously improving coding skills and staying updated with industry trends.",
+		],
+		icon: "material-symbols:database",
+		color: "#f1a0e0",
+		// featured: true,
+	},
+	{
+		id: "current-project",
+		title: "Untiy Cyclelist Component",
+		description:
+			"Currently developing a Cyclelist component for Unity, aiming to provide a flexible and efficient solution for displaying large lists of items in Unity projects.",
+		type: "project",
+		startDate: "2026-03-01",
+		location: "Dongguan City",
+		skills: ["C#", "Unity", "UGUI"],
+		achievements: [
+			"Designing and implementing a Cyclelist component that supports dynamic loading and unloading of items to optimize performance.",
+			"Ensuring the component is flexible and customizable to fit various use cases in Unity projects.",
+			"Testing and optimizing the component for smooth performance even with large datasets.",
 		],
 		links: [
 			{
 				name: "GitHub Repository",
-				url: "https://github.com/example/mizuki-blog",
+				url: "https://github.com/Lemo1925/CycleList",
 				type: "project",
 			},
-			{
-				name: "Live Demo",
-				url: "https://mizuki-demo.example.com",
-				type: "website",
-			},
 		],
-		icon: "material-symbols:code",
-		color: "#7C3AED",
-		featured: true,
-	},
-	{
-		id: "summer-internship-2024",
-		title: "Frontend Development Intern",
-		description:
-			"Summer internship at an internet company, participating in frontend development of web applications.",
-		type: "work",
-		startDate: "2024-07-01",
-		endDate: "2024-08-31",
-		location: "Beijing",
-		organization: "TechStart Internet Company",
-		position: "Frontend Development Intern",
-		skills: ["React", "JavaScript", "CSS3", "Git", "Figma"],
-		achievements: [
-			"Completed user interface component development",
-			"Learned team collaboration and code standards",
-			"Received outstanding internship performance certificate",
-		],
-		icon: "material-symbols:work",
-		color: "#DC2626",
-		featured: true,
-	},
-	{
-		id: "web-development-course",
-		title: "Completed Web Development Online Course",
-		description:
-			"Completed a full-stack web development online course, systematically learning frontend and backend development technologies.",
-		type: "achievement",
-		startDate: "2024-01-15",
-		endDate: "2024-05-30",
-		organization: "Mooc Website",
-		skills: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
-		achievements: [
-			"Received course completion certificate",
-			"Completed 5 practical projects",
-			"Mastered full-stack development fundamentals",
-		],
-		links: [
-			{
-				name: "Course Certificate",
-				url: "https://certificates.example.com/web-dev",
-				type: "certificate",
-			},
-		],
-		icon: "material-symbols:verified",
-		color: "#059669",
-	},
-	{
-		id: "student-management-system",
-		title: "Student Management System Course Project",
-		description:
-			"Final project for the database course, developed a complete student information management system.",
-		type: "project",
-		startDate: "2023-11-01",
-		endDate: "2023-12-15",
-		skills: ["Java", "MySQL", "Swing", "JDBC"],
-		achievements: [
-			"Received excellent course project grade",
-			"Implemented complete CRUD functionality",
-			"Learned database design and optimization",
-		],
-		icon: "material-symbols:database",
-		color: "#EA580C",
-	},
-	{
-		id: "programming-contest",
-		title: "University Programming Contest",
-		description:
-			"Participated in a programming contest held by the university, improving algorithm and programming skills.",
-		type: "achievement",
-		startDate: "2023-10-20",
-		location: "Beijing Institute of Technology",
-		organization: "School of Computer Science",
-		skills: ["C++", "Algorithms", "Data Structures"],
-		achievements: [
-			"Won third prize in university contest",
-			"Improved algorithmic thinking ability",
-			"Strengthened programming fundamentals",
-		],
-		icon: "material-symbols:emoji-events",
-		color: "#7C3AED",
-	},
-	{
-		id: "part-time-tutor",
-		title: "Part-time Programming Tutor",
-		description:
-			"Provided programming tutoring for high school students, helping them learn Python basics.",
-		type: "work",
-		startDate: "2023-09-01",
-		endDate: "2024-01-31",
-		position: "Programming Tutor",
-		skills: ["Python", "Teaching", "Communication"],
-		achievements: [
-			"Helped 3 students master Python basics",
-			"Improved expression and communication skills",
-			"Gained teaching experience",
-		],
-		icon: "material-symbols:school",
-		color: "#059669",
-	},
-	{
-		id: "high-school-graduation",
-		title: "High School Graduation",
-		description:
-			"Graduated from high school with excellent grades and was admitted to the Computer Science and Technology program at Beijing Institute of Technology.",
-		type: "education",
-		startDate: "2019-09-01",
-		endDate: "2022-06-30",
-		location: "Jinan, Shandong",
-		organization: "No.1 High School of Jinan",
-		achievements: [
-			"College entrance exam score: 620",
-			"Received municipal model student award",
-			"Won provincial second prize in math competition",
-		],
-		icon: "material-symbols:school",
-		color: "#2563EB",
-	},
-	{
-		id: "first-programming-experience",
-		title: "First Programming Experience",
-		description:
-			"First encountered programming in high school IT class, started learning Python basic syntax.",
-		type: "education",
-		startDate: "2021-03-01",
-		skills: ["Python", "Basic Programming Concepts"],
-		achievements: [
-			'Completed first "Hello World" program',
-			"Learned basic loops and conditional statements",
-			"Developed interest in programming",
-		],
-		icon: "material-symbols:code",
-		color: "#7C3AED",
+		icon: "material-symbols:cycle",
+		color: "#0bf17e",
+		// featured: true,
 	},
 ];
 
@@ -217,6 +170,8 @@ export const getTimelineStats = () => {
 		work: timelineData.filter((item) => item.type === "work").length,
 		project: timelineData.filter((item) => item.type === "project").length,
 		achievement: timelineData.filter((item) => item.type === "achievement")
+			.length,
+		personal: timelineData.filter((item) => item.type === "personal")
 			.length,
 	};
 

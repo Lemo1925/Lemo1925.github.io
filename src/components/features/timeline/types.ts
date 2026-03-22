@@ -8,7 +8,7 @@ export interface TimelineItem {
 	id: string;
 	title: string;
 	description: string;
-	type: "education" | "work" | "project" | "achievement";
+	type: "education" | "work" | "project" | "achievement" | "personal";
 	startDate: string;
 	endDate?: string;
 	location?: string;

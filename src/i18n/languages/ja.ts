@@ -252,6 +252,7 @@ export const ja: Translation = {
 	[Key.timelineWork]: "実務経験",
 	[Key.timelineProject]: "プロジェクト経験",
 	[Key.timelineAchievement]: "実績",
+	[Key.timelinePersonal]: "個人の成長",
 	[Key.timelinePresent]: "現在",
 	[Key.timelineLocation]: "場所",
 	[Key.timelineDescription]: "詳細な説明",
