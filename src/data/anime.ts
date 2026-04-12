@@ -18,8 +18,25 @@ export interface AnimeItem {
 
 const localAnimeList: AnimeItem[] = [
 	{
+		title: "ReLIFE",
+		status: "completed",
+		rating: 7.7,
+		cover: "https://cdn.aqdstatic.com:966/age/20160098.jpg",
+		description:
+			"Relive to the high school life, forms meaningful friendships, and gets an opportunity to change his future.",
+		episodes: "13 episodes",
+		year: "2016",
+		genre: ["ReLife", "School", "Youth"],
+		studio: "ANIPLEX",
+		link: "https://www.cycani.org/bangumi/1709.html",
+		progress: 13,
+		totalEpisodes: 13,
+		startDate: "2016-07",
+		endDate: "2016-11",
+	},
+	{
 		title: "Oshi no Ko 3rd",
-		status: "watching",
+		status: "completed",
 		rating: 7.0,
 		cover: "https://cdn.aqdstatic.com:966/age/20260015.jpg",
 		description: "Meeting girls among the stars, pure love and healing",
@@ -68,3 +85,4 @@ const localAnimeList: AnimeItem[] = [
 ];
 
 export default localAnimeList;
+

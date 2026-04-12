@@ -116,24 +116,24 @@ export const timelineData: TimelineItem[] = [
 		color: "#0bd146",
 		// featured: true,
 	},
-	// {
-	// 	id: "current-state",
-	// 	title: "Learning and improving skills",
-	// 	description:
-	// 		"Currently learning and improving skills in Game development and related technologies.",
-	// 	type: "personal",
-	// 	startDate: "2026-03-01",
-	// 	location: "Dongguan City",
-	// 	skills: ["Docker", "AI", "Python", "Astro", "Node.js"],
-	// 	achievements: [
-	// 		"Rebuild this personal website using Astro and Tailwind CSS.",
-	// 		"Learning Docker and AI technologies to enhance development skills.",
-	// 		"Continuously improving coding skills and staying updated with industry trends.",
-	// 	],
-	// 	icon: "material-symbols:database",
-	// 	color: "#f1a0e0",
-	// 	// featured: true,
-	// },
+	{
+		id: "third-job",
+		title: "ShangHai Longyou games Co., Ltd.",
+		description:
+			"Worked as a Unity developer at ShangHai Longyou games, contributing to the development of CWT Games.",
+		type: "work",
+		startDate: "2026-04-08",
+		location: "ShangHai City",
+		skills: ["FGUI", "Unity", "XLua", "Lua", "Claude Code"],
+		achievements: [
+			"Learning the CWT Games framework",
+			"Try to use the Fairy GUI design game UI",
+			"Improve the 3d games develop ability",
+		],
+		icon: "material-symbols:work",
+		color: "#f1a0e0",
+		// featured: true,
+	},
 	{
 		id: "2035-client",
 		title: "2035 Games",
@@ -247,3 +247,4 @@ export const getTotalWorkExperience = () => {
 		months: totalMonths % 12,
 	};
 };
+
