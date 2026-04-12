@@ -44,9 +44,10 @@ export const projectsData: Project[] = [
 		image: "",
 		category: "other",
 		techStack: ["UGUI", "Unity", "C#"],
-		status: "in-progress",
+		status: "completed",
 		sourceCode: "https://github.com/Lemo1925/CycleList",
 		startDate: "2026-03-01",
+		endDate: "2026-03-02",
 		tags: ["UGUI", "Unity", "C#"],
 	},
 	{
@@ -136,3 +137,4 @@ export const getAllTechStack = () => {
 	});
 	return Array.from(techSet).sort();
 };
+
